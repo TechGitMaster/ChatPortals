@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".HomeUser" >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="40dp"
+        android:text="QR-Code"
+        android:textAlignment="viewEnd"
+        android:textColor="#252525"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QRCodeUser" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="110dp"
+        android:text="Information"
+        android:textAlignment="center"
+        android:textColor="#252525"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informationUser" />
+
+    <Button
+        android:id="@+id/searchBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircleRadius="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#80000000"
+        android:text="@android:string/search_go"
+        android:textColor="#D4D1D6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/radiusborders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:id="@+id/fragmentHomeUser"
+            android:name="com.example.chatportal.InformationUser"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/informationUser"
+        android:layout_width="111dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="informationUser"
+        android:src="@drawable/information"
+        app:layout_constraintEnd_toStartOf="@+id/QRCodeUser"
+        app:layout_constraintStart_toEndOf="@+id/messangerUser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/messangerUser"
+        android:layout_width="111dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:contentDescription="messangerUser"
+        android:src="@drawable/chatting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/QRCodeUser"
+        android:layout_width="111dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="QRCodeUser"
+        android:src="@drawable/qrcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="#80000000"
+        android:text="Log-out"
+        android:textColor="#D4D1D6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="260dp"
+        android:text="Messenger"
+        android:textAlignment="viewStart"
+        android:textColor="#252525"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messangerUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#8A7A80</color>
+    <color name="colorWhite">#ebe8e8</color>
+    <color name="colorDoneClicked">#252525</color>
+    <color name="chooseFileColor">#5e96c4</color>
+    <color name="colorMonthAndYearBttnClicked">#D8D6D6</color>
+    <color name="colorMonthAndYearBttnUnClicked">#ECECEC</color>
+    <color name="colorImageYearAndMonthOpacity">#50000000</color>
+    <color name="picture1HaveInOneDay">#03ebfc</color>
+    <color name="pictureHaveMultipleOneDay">#03fc6b</color>
+</resources>

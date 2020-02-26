@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:id="@+id/linearLayout9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_conversion_absoluteHeight="731dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="0dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ViewFlipper
+                android:id="@+id/flipperView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:elevation="0dp"
+                android:visibility="visible">
+
+            </ViewFlipper>
+
+        </androidx.cardview.widget.CardView>
+        <!--#ECECEC-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#90000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="197dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.015">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/monthBttn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#D8D6D6"
+                        android:contentDescription="monthDescription"
+                        android:text="Month" />
+
+                    <Button
+                        android:id="@+id/yearBttn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ECECEC"
+                        android:contentDescription="yearDescription"
+                        android:text="Year" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:id="@+id/month_scrollBar"
+                android:layout_width="0dp"
+                android:layout_height="132dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <LinearLayout
+                    android:id="@+id/monthLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="3dp">
+
+                        <ImageView
+                            android:id="@+id/imageTrys"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#60000000"
+                            android:elevation="10dp"
+                            android:gravity="center"
+                            android:text="Month"
+                            android:textColor="@android:color/white"
+                            android:textSize="17dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="3dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="3dp" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/year_scrollBar"
+                android:layout_width="0dp"
+                android:layout_height="132dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <LinearLayout
+                    android:id="@+id/yearLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="3dp">
+
+                        <ImageView
+                            android:id="@+id/imageTry"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#60000000"
+                            android:elevation="10dp"
+                            android:gravity="center"
+                            android:text="Year"
+                            android:textColor="@android:color/white"
+                            android:textSize="17dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="3dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="115dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="3dp" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="183dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toEndOf="@+id/cardView5"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/MonthText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:text="December "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/YearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:text="| 2020"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutJarDayImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radiusblack"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/month_scrollBar">
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
